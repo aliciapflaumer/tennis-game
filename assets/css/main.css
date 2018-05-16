@@ -1,0 +1,29 @@
+#gameCanvas {
+  border: 2px solid #993299;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  padding: 0;
+}
+
+h1, footer {
+  color: #993299;
+  display: block;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+footer {
+  padding: 5px 0;
+}
+
+footer a:link {
+  padding: 5px 0;
+}
+
+p {
+  color: #993299;
+  display: block;
+  text-align: center;
+}
