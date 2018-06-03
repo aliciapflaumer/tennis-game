@@ -27,3 +27,10 @@ p {
   display: block;
   text-align: center;
 }
+
+/* @media (max-width:700px) {
+  #gameCanvas {
+    height: auto;
+    width: 320px;
+  }
+} */
