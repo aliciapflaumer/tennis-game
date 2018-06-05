@@ -8,5 +8,5 @@ Created an arcade-style tennis game using HTML5 & Javascript, while following al
 - Update the UI for the page
 - Create a start game option
 - Make mobile responsive
-- Enlarge the in-game font text
+[DONE]- Enlarge the in-game font text
 - Create authentication

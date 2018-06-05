@@ -123,18 +123,20 @@ function drawNet() {
 }
 
 function draw() {
+  let ctx = document.getElementById('gameCanvas').getContext('2d')
+  ctx.font = '48px serif'
   // background
   colorRect(0,0,canvas.width,canvas.height, '#000')
   if (showingWinScreen) {
     canvasContext.fillStyle = "white"
 
     if (player1Score >= winning_score) {
-        canvasContext.fillText("You won!", 350, 200)
+        canvasContext.fillText("You won!", 325, 200)
     } else if(player2Score >= winning_score) {
-        canvasContext.fillText("Computer wins", 350, 200)
+        canvasContext.fillText("Computer wins", 260, 200)
     }
 
-    canvasContext.fillText("click to continue", 350, 500)
+    canvasContext.fillText("click to continue", 250, 400)
     return
   }
 
