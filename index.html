@@ -64,7 +64,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="signup">Sign in</h5>
+        <h5 class="modal-title" id="signin">Sign in</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -84,10 +84,15 @@
 </div>
 
   <div class="container">
-    <h1>Tennis Game</h1>
-    <p><b>Instructions:</b> You are the left paddle and you're playing against the computer on the right side.</p>
+    <div id="splashScreen">
+      <h1>Tennis Game</h1>
+      <p><b>Instructions:</b> You are the left paddle and you're playing against the computer on the right side.</p>
+      <input id="startButton" type="button" value="Start" class="btn btn-secondary" />
+    </div>
+
     <canvas id="gameCanvas" width="800" height="600">
     </canvas>
+
     <footer>
     Made by Alicia Pflaumer while following along with <a href="https://www.udemy.com/code-your-first-game/">Chris Deleon on Udemy</a> <br>to learn to make an arcade-style game with HTML5.<br>
       <a href="https://github.com/aliciapflaumer">Github</a>

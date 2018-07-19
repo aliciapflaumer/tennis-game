@@ -30,13 +30,17 @@ footer a:link {
 
 .nav-link:hover {
     background-color: #ccc;
-    color: #fff;
 }
 
 p {
   color: #993299;
   display: block;
   text-align: center;
+}
+
+#startButton:hover {
+  background-color: #ccc;
+  color: #000;
 }
 
 /* @media (max-width:700px) {
