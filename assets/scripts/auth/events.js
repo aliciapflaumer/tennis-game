@@ -1,7 +1,7 @@
 'use strict'
 
 // require is not defined
-const api = require('./api')
+// const api = require('./api')
 
 const onSignUp = function (event) {
   event.preventDefault()
@@ -15,6 +15,6 @@ const addHandlers = function () {
   $('#sign-up').on('submit', onSignUp)
 }
 
-module.exports = {
-  addHandlers
-}
+// module.exports = {
+//   addHandlers
+// }

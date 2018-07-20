@@ -1,12 +1,12 @@
 #gameCanvas {
   border: 2px solid #993299;
   border-radius: 10px;
-  display: block;
+  display: none;
   margin: auto;
   padding: 0;
 }
 
-h1, footer {
+h1 {
   color: #993299;
   display: block;
   margin: auto;
@@ -15,11 +15,26 @@ h1, footer {
 }
 
 footer {
-  padding: 5px 0;
+    margin-top: 20px;
+    background-color: #ccc;
+    border-top: 1px solid #000;
 }
 
-footer a:link {
+footer p {
+  color: #993299;
+  text-align: center;
+  width: 80%;
+}
+/* footer {
   padding: 5px 0;
+} */
+
+footer a {
+  color: #000;
+}
+
+footer a:hover {
+  color: #993299;
 }
 
 .nav-link {

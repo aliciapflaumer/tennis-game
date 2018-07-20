@@ -129,6 +129,7 @@ function draw() {
   ctx.font = '48px serif'
   // background
   colorRect(0,0,canvas.width,canvas.height, '#000')
+
   if (showingWinScreen) {
     canvasContext.fillStyle = "white"
 
