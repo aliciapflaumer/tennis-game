@@ -18,6 +18,9 @@ let paddle2Y = 250
 const paddle_height = 100
 const paddle_width = 20
 
+
+
+
 function calculateMousePos(evt) {
   let rect = canvas.getBoundingClientRect()
   let root = document.documentElement

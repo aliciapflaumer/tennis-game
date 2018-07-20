@@ -1,7 +1,7 @@
 #gameCanvas {
   border: 2px solid #993299;
   border-radius: 10px;
-  display: none;
+  display: block;
   margin: auto;
   padding: 0;
 }
