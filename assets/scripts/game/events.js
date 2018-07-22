@@ -12,27 +12,29 @@ let player2Score = 0
 const winning_score = 3
 
 let showingWinScreen = false
+let startScreen = true
 
 let paddle1Y = 250
 let paddle2Y = 250
 const paddle_height = 100
 const paddle_width = 20
 
-let canvas = document.getElementById('gameCanvas')
-let canvasContext = canvas.getContext('2d')
 
-canvasContext.font = '50px Impact'
-canvasContext.fillStyle = '#0099CC'
-canvasContext.textAlign = 'center'
-canvasContext.fillText('HTML5 Arcade-style Tennis Game', canvas.width/2, canvas.height/2)
+  let canvas = document.getElementById('gameCanvas')
+  let canvasContext = canvas.getContext('2d')
 
-canvasContext.font = '30px Arial'
-canvasContext.fillStyle = '#0099CC'
-canvasContext.fillText('Click to Begin', canvas.width/2, canvas.height/2 + 100)
-canvas.addEventListener('click', function(evt) {
-  // alert('clicked inside canvas')
-  main()
-})
+  canvasContext.font = '50px Impact'
+  canvasContext.fillStyle = '#0099CC'
+  canvasContext.textAlign = 'center'
+  canvasContext.fillText('HTML5 Arcade-style Tennis Game', canvas.width/2, canvas.height/2)
+
+  canvasContext.font = '30px Arial'
+  canvasContext.fillStyle = '#0099CC'
+  canvasContext.fillText('Click to Begin', canvas.width/2, canvas.height/2 + 100)
+  canvas.addEventListener('click', function(evt) {
+    // alert('clicked inside canvas')
+    main()
+  })
 
 function calculateMousePos(evt) {
   let rect = canvas.getBoundingClientRect()
@@ -156,9 +158,7 @@ function draw() {
     } else if(player2Score >= winning_score) {
         canvasContext.fillText("Computer wins", 400, 200)
     }
-
     canvasContext.fillText("click to continue", 400, 400)
-    return
   }
 
   drawNet()
