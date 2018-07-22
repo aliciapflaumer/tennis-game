@@ -35,6 +35,8 @@ const paddle_width = 20
     main()
   })
 
+function main () {
+  
 function calculateMousePos(evt) {
   let rect = canvas.getBoundingClientRect()
   let root = document.documentElement
@@ -45,8 +47,6 @@ function calculateMousePos(evt) {
     y:mouseY
   }
 }
-
-function main () {
 
 function handleMouseClick(evt) {
   if (showingWinScreen) {
