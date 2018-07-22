@@ -1,3 +1,7 @@
+body {
+  padding-top: 30px;
+}
+
 #gameCanvas {
   border: 2px solid #993299;
   border-radius: 10px;
@@ -6,28 +10,18 @@
   padding: 0;
 }
 
-h1 {
-  color: #993299;
-  display: block;
-  margin: auto;
-  padding: 0;
-  text-align: center;
-}
-
 footer {
-    margin-top: 20px;
     background-color: #ccc;
     border-top: 1px solid #000;
+    color: #993299;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 footer p {
-  color: #993299;
-  text-align: center;
-  width: 80%;
+  margin-left: 40%;
 }
-/* footer {
-  padding: 5px 0;
-} */
 
 footer a {
   color: #000;
@@ -52,15 +46,3 @@ p {
   display: block;
   text-align: center;
 }
-
-#startButton:hover {
-  background-color: #ccc;
-  color: #000;
-}
-
-/* @media (max-width:700px) {
-  #gameCanvas {
-    height: auto;
-    width: 320px;
-  }
-} */

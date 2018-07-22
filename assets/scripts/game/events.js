@@ -1,7 +1,7 @@
 'use strict'
 
-let canvas
-let canvasContext
+// let canvas
+// let canvasContext
 let ballX = 50
 let ballY = 50
 let ballSpeedX = 10
@@ -18,8 +18,21 @@ let paddle2Y = 250
 const paddle_height = 100
 const paddle_width = 20
 
+let canvas = document.getElementById('gameCanvas')
+let canvasContext = canvas.getContext('2d')
 
+canvasContext.font = '50px Impact'
+canvasContext.fillStyle = '#0099CC'
+canvasContext.textAlign = 'center'
+canvasContext.fillText('HTML5 Arcade-style Tennis Game', canvas.width/2, canvas.height/2)
 
+canvasContext.font = '30px Arial'
+canvasContext.fillStyle = '#0099CC'
+canvasContext.fillText('Click to Begin', canvas.width/2, canvas.height/2 + 100)
+canvas.addEventListener('click', function(evt) {
+  // alert('clicked inside canvas')
+  main()
+})
 
 function calculateMousePos(evt) {
   let rect = canvas.getBoundingClientRect()
@@ -32,6 +45,8 @@ function calculateMousePos(evt) {
   }
 }
 
+function main () {
+
 function handleMouseClick(evt) {
   if (showingWinScreen) {
         player1Score = 0
@@ -40,8 +55,8 @@ function handleMouseClick(evt) {
       }
 }
 
-canvas = document.getElementById('gameCanvas')
-canvasContext = canvas.getContext('2d')
+// let canvas = document.getElementById('gameCanvas')
+// let canvasContext = canvas.getContext('2d')
 
 let framesPerSecond = 30
 setInterval(function() {
@@ -137,12 +152,12 @@ function draw() {
     canvasContext.fillStyle = "white"
 
     if (player1Score >= winning_score) {
-        canvasContext.fillText("You won!", 325, 200)
+        canvasContext.fillText("You won!", 400, 200)
     } else if(player2Score >= winning_score) {
-        canvasContext.fillText("Computer wins", 260, 200)
+        canvasContext.fillText("Computer wins", 400, 200)
     }
 
-    canvasContext.fillText("click to continue", 250, 400)
+    canvasContext.fillText("click to continue", 400, 400)
     return
   }
 
@@ -166,4 +181,6 @@ function draw() {
 function colorRect(leftX, topY, width, height, drawColor) {
   canvasContext.fillStyle = drawColor
   canvasContext.fillRect(leftX, topY, width, height)
+}
+
 }
