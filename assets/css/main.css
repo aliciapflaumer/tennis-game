@@ -5,6 +5,7 @@ body {
 #gameCanvas {
   border: 2px solid #993299;
   border-radius: 10px;
+  cursor: pointer;
   display: block;
   margin: auto;
   padding: 0;
