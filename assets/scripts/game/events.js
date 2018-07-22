@@ -9,7 +9,7 @@ let ballSpeedY = 4
 
 let player1Score = 0
 let player2Score = 0
-const winning_score = 3
+const winning_score = 5
 
 let showingWinScreen = false
 let startScreen = true
@@ -18,7 +18,6 @@ let paddle1Y = 250
 let paddle2Y = 250
 const paddle_height = 100
 const paddle_width = 20
-
 
   let canvas = document.getElementById('gameCanvas')
   let canvasContext = canvas.getContext('2d')
